@@ -1,4 +1,4 @@
-Software: BASH shell commands
+Software: Terminal commands
 Developer: GNU Find /findutilities project/Open source
 Developer: sdiff original author Thomas Lord
 Purpose: General purpose commands
