@@ -1,0 +1,13 @@
+Software: Clamdscan - multi-threaded - REQUIRES properly installed and configured daemon clamdscan
+Developer: Open Source / https://www.clamav.net/about#credits
+Purpose: Scan file system/files for virus
+Documentation:  https://www.clamav.net/documents/scanning#clamdscan
+
+To Run Sample: Create 2 directories on desktop source & destination. Load testing files of your choice to source directory. Disk images may need to be mounted first to access files.  Cntl-Alt-T to open a new terminal. Type sample command.
+
+General Command Structure:  
+(Note: raw/split images must be mounted first):
+sudo clamdscan --fdpass --multiscan --log=/path/to/log/output_dir/filename.log  /path/to/scan 
+
+Sample Clamdscan Command:
+sudo clamdscan --fdpass --multiscan --log=/home/bcadmin/Desktop/destination/clamAV.log /home/bcadmin/Desktop/source

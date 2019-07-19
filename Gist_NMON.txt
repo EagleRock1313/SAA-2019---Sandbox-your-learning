@@ -1,0 +1,15 @@
+Software: NMON for Linux (Nigels Monitor)
+Developer: IBM. Original Author Nigel Griffiths
+Purpose: AIX/Linux System Performance monitoring 
+General Documentation: https://www.tecmint.com/nmon-analyze-and-monitor-linux-system-performance/
+Website: http://nmon.sourceforge.net/pmwiki.php?n=Site.CompilingNmon
+
+To Run Sample: Cntl-Alt-T to open a new terminal. To install the software from the repository, type install command. 
+Type sample command.
+
+Install Command:
+apt-get install nmon
+
+Sample NMON Command:
+nmon 
+md    (to view memory and disk information)

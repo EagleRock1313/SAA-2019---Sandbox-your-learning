@@ -1,0 +1,15 @@
+Software: Bulk Extracter w/Regex Text and Performance Tuning
+Developer: Simson Garfinkel
+Purpose: Preliminary bulk data triage and analysis - PII (personally identifying information) review
+Documentation: http://www.forensicswiki.org/wiki/Bulk_extractor 
+See also: http://downloads.digitalcorpora.org/downloads/bulk_extractor/doc/2013.COSE.bulk_extractor.pdf
+NOTE: Depending on the size of the collection, the number of terms in sensitive.txt, and the hardware resources available on the machine, this scan could take several hours.  Start small.
+
+To Run Sample: Create 2 directories on desktop source & destination. Create sensitive.txt on desktop and copy/paste Gist_sensitive.txt to this file and save.  
+Load testing files of your choice to source directory. Cntl-Alt-T to open a new terminal. Type sample command.
+
+General Command Structure:
+bulk_extractor -o /path/to/output_dir -F /path/to/lexicon/regex_txt  -C 64 -G 67088784 -g 16777216 -B 1024 -R /path/to/source/  &> /path to/output_dir/redirect/stdout_BE.txt 
+
+Sample BulkExtractor Command to recurse through a directory of files:
+bulk_extractor -o /home/bcadmin/Desktop/destination/bulk_extractor -F /home/bcadmin/Desktop/sensitive.txt  -C 64 -G 67088784 -g 16777216 -B 1024 -R /home/bcadmin/Desktop/source  &> /home/bcadmin/Desktop/destination/stdout_BE.txt 

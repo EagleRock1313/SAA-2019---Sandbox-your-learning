@@ -1,0 +1,15 @@
+Software: Brunnhilde(incl Siegfried and The Sleuth Kit) 
+Developer: Brunnhilde Timothy Ryan Walsh - Siegfried Richard Lehane - The Sleuth Kit Original Author Brian Carrier
+Purpose: Create summary reports 
+Documentation: https://github.com/timothyryanwalsh/brunnhilde
+
+To Run Sample: Create 2 directories on desktop source & destination. Load testing files of your choice to source directory. 
+Some Disk images may need to be mounted first to access files, hfs filesystems may need special options. 
+Cntl-Alt-T to open a new terminal. Type command.
+
+General Command Structure:
+(research options, including -d -l -n -r -k --hfs)
+brunnhilde.py /path/to/source /path/to/output_dir  <basename> &> /path/to/redirect/<ouput.txt> 
+
+Sample Brunnhilde Command for directory of files:
+brunnhilde.py -n -r -k /home/bcadmin/Desktop/source /home/bcadmin/Desktop/destination Brunnhilde &> /home/bcadmin/Desktop/destination/stdout_BH.txt
